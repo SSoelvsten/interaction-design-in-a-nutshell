@@ -21,20 +21,40 @@
 \usepackage[columns=2]{idxlayout}
 \makeindex
 
+% Images in the background (Front page)
+\usepackage[some,top]{background}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%
 % Document starts here! %
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\settitle{Interaction Design for Computer Scientists}
-\addauth{Steffan Sølvsten}{201505832@post.au.dk}{\, au534068}
-\maketitle
+\settitle{\sc Interaction Design - In a Nutshell}
+\addauth{Steffan Sølvsten}
+%\date{}
+%\maketitle
 
-\begin{abstract}
-  \noindent After having to read three different books on Human Computer Interaction, this is an attempt to dispose of the frustrating amount of unecessary information and vague or non-existent definitions in the HCI universe apparent in all text books. This is to be a dense, clearly defined, and small guide to interaction design
-\end{abstract}
+% Custom title
+\thispagestyle{empty} % remove header and footer
+\begin{center}
+	\phantom{}\vspace{2.7cm}
+	{\Huge\sc Interaction Design}
+	\\ \vspace{1em}
+	{\LARGE\sc In a Nutshell}
+	\\
+	\line(1,0){250}
+	\\ \vspace{1em}
+	{\LARGE Steffan Sølvsten}
+\end{center}
+
+\SetBgContents{
+    \includegraphics[scale=0.055]{img/front.png}
+}
+\SetBgOpacity{1}
+\BgThispage
 
 \newpage
+\thispagestyle{empty} % remove header and footer
 \tableofcontents
 
 \newpage
@@ -47,16 +67,16 @@
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Chapter: Theory and Concepts
+ % Chapter: Theory and Concepts
 \section{Theory and Concepts}
 \label{sec:1}
 
 \input{Part1_Theory/0_Introduction.tex}
 \input{Part1_Theory/1_Initial.tex}
-\input{Part1_Theory/2_DataGathering.tex}
-\input{Part1_Theory/3_DataAnalysis.tex}
-\input{Part1_Theory/4_Envisionment.tex}
-\input{Part1_Theory/5_Prototyping.tex}
+\input{Part1_Theory/3_DataGathering.tex}
+\input{Part1_Theory/4_DataAnalysis.tex}
+\input{Part1_Theory/5_Envisionment.tex}
+\input{Part1_Theory/6_Prototyping.tex}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
