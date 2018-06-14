@@ -18,3 +18,11 @@
 *.pdf
 
 auto/
+
+*.bbl
+
+*.blg
+
+*.gz
+
+*.bak
