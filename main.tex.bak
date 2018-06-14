@@ -1,125 +1,52 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Set up document         %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4, english, twoside]{article}
-
-% Import SSoelvsten's LaTeX preamble
-% github.com/SSoelvsten/LaTeX-Preamble_and_Examples
-\usepackage{import}
-\subimport{../LaTeX-Preamble_and_Examples/preamble/}{preamble_en.tex}
-
-% New settings for this specific document
-
-% Use these for 'definitions' in the theory section
-\newtheorem{concept}[theorem]{Concept}
-\newtheorem{framework}[theorem]{Framework}
-\newtheorem{method}[theorem]{Method}
-
-% Indexing
-% To index something, write \index{keyword}
-\usepackage{makeidx}
-\usepackage[columns=2]{idxlayout}
-\makeindex
-
-% Images in the background (Front page)
-\usepackage[some,top]{background}
+\input{preamble.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 % Document starts here! %
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\settitle{\sc Interaction Design - In a Nutshell}
-\addauth{Steffan Sølvsten}
-%\date{}
-%\maketitle
+\frontmatter
+   \pagestyle{empty}
+   \input{part_frontmatter/titlepage.tex}
+   \input{part_frontmatter/copyright.tex}
 
-% Custom title
-\thispagestyle{empty} % remove header and footer
-\begin{center}
-	\phantom{}\vspace{2cm}
-	{\Huge\sc Interaction Design}
-	\\ \vspace{1em}
-	{\LARGE\sc In a Nutshell}
-	\\
-	\line(1,0){250}
-	\\ \vspace{1em}
-	{\LARGE Steffan Sølvsten}
-\end{center}
+   \newpage \pagestyle{fancy} \setcounter{page}{1}
+   \tableofcontents
 
-\SetBgContents{
-    \includegraphics[scale=0.055]{img/front.png}
-}
-\SetBgOpacity{1}
-\BgThispage
+   \input{part_frontmatter/introduction.tex}
+   
+\mainmatter
+   \part{Theory}
+       \input{part1/introduction.tex}
+       \input{part1/concepts.tex}
+       \input{part1/process.tex}
+       \input{part1/methods.tex}
+       \input{part1/development.tex}
+       
+   \part{Examples}
+       % TODO
+   
+   \part{Exercises}
+       % TODO
 
-\newpage
-\thispagestyle{empty} % remove header and footer
-\tableofcontents
-
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Chapter: Introduction
-\section{Introduction}
-\label{sec:introduction}
-
-\input{introduction.tex}
-
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- % Chapter: Theory and Concepts
-\section{Theory and Concepts}
-\label{sec:1}
-
-\input{Part1_Theory/0_Introduction.tex}
-\input{Part1_Theory/1_Initial.tex}
-\input{Part1_Theory/3_DataGathering.tex}
-\input{Part1_Theory/4_DataAnalysis.tex}
-\input{Part1_Theory/5_Envisionment.tex}
-\input{Part1_Theory/6_Prototyping.tex}
-
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Chapter: Examples
-\section{Examples}
-\label{sec:2}
-
-\input{Part2_Examples/0_Introduction.tex}
-% TODO: Add sections
-%       Need to know structure of part 1 first
-
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Chapter: Exercises
-\section{Exercises}
-\label{sec:3}
-
-\input{Part3_Exercises/0_Introduction.tex}
-% TODO: Add sections
-%       Need to know structure of part 1 first
+% \section{Theory}
+% \label{sec:1}
 
 
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% References
-\begin{minipage}{1.0\textwidth}
-  \begin{thebibliography}{9}
-  \bibitem{benyon_14}
-    Benyon, David: \emph{Designing Interactive Systems}, Pearson, 3rd edition, 2014
-  \bibitem{benyon_10}
-    Benyon, David: \emph{Designing Interactive Systems}, Pearson, 2nd edition, 2010
-  \bibitem{rogers}
-    Rogers, Yvonne: \emph{Interaction Design: Beyond human-computer interaction}, Wiley, 3rd edition, 2011
-  \bibitem{lim}
-    Lim, Youn-Kyung and Tenenberg, Josh: \emph{The Anatomy of Prototypes}, ACM Transactions on Computer-Human Interaction, Vol. 15, 2008
-  \end{thebibliography}
-  \bibliographystyle{abbrv}
-  \bibliography{referencer}
-\end{minipage}
 
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Index
-\printindex
+% \input{Part1_Theory/concepts.tex}
+
+% \input{Part1_Theory/agile.tex}
+
+% \input{Part1_Theory/initial.tex}
+% \input{Part1_Theory/data_gathering.tex}
+% \input{Part1_Theory/data_analysis.tex}
+% \input{Part1_Theory/envisionment.tex}
+% \input{Part1_Theory/prototyping.tex}
+
+\backmatter
+    \input{part_backmatter/bibliography.tex}
+    \printindex
+    \input{part_backmatter/back.tex}
 
 \end{document}

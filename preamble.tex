@@ -1,0 +1,72 @@
+\documentclass[a4paper, 10pt, twoside, openany]{book}
+
+\usepackage{afterpage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         Page Layout           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper]{geometry}
+\usepackage{changepage}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%Odd pages
+\fancyhead[RO]{}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+
+%Even pages
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[LE]{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            Text               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Font
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+
+% Quotes
+\usepackage[danish=guillemets]{csquotes}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Graphics, figures, and tables %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tabularx,booktabs,authblk}
+
+\usepackage{caption,subcaption}
+\usepackage{wrapfig}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[some,top]{background}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%          Hypermedia          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            Index              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{makeidx}
+\usepackage[columns=2]{idxlayout}
+\makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         Environments          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{mathtools, amsmath}
+\usepackage{amsthm}
+\theoremstyle{definition}
+
+\newtheorem{concept}{Concept}[chapter]
+\newtheorem{framework}[concept]{Framework}
+\newtheorem{method}[concept]{Method}
+\newtheorem{tool}[concept]{Tool}
+\newtheorem{definition}[concept]{Definition}
+
