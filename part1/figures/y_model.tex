@@ -1,0 +1,18 @@
+\begin{figure}[ht!]
+  \centering
+  \begin{tikzpicture}
+    \node[cloud, draw, aspect=2] (evaluation) {Evaluation};
+    \node[cloud, draw, aspect=2] (envisionment) [above left=1cm of evaluation] {Envisionment};
+    \node[cloud, draw, aspect=2] (understanding) [above right=1cm of evaluation] {Understanding};
+    \node[cloud, draw, aspect=2, align=left] (design) [below =1cm of evaluation] {Design \\ \\ \\};
+    \node[cloud, draw, fill=white, aspect=2, align=right] (conceptual) [below left =-1.7cm of design] {Conceptual \\ Design};
+    \node[cloud, draw, fill=white, aspect=2, align=left] (physical) [below right =-1.7cm of design] {Physical \\ Design};
+    \path[<->, line width=0.6mm]
+        (evaluation) edge (envisionment)
+                     edge (understanding)
+                     edge (design)
+    ;
+  \end{tikzpicture}
+  \caption{The Y-model visualized \cite[p. 49]{benyon_14}}
+  \label{fig:y_model}
+\end{figure}
