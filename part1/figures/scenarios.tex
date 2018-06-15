@@ -1,6 +1,42 @@
 \begin{figure}
   \centering
-  TODO : Recreate the figure from Benyon
-  \caption{The four different types of scenarios \cite[p. 67]{benyon_14}}
+  \begin{tikzpicture}
+    % Scenarios
+    \node[rectangle, fill=GreenYellow, draw, aspect=2] (user_stories) {User Stories \vphantom{p}};
+    \node[rectangle, fill=GreenYellow, draw, aspect=2, align=right] (conceptual_scenarios) [right=1.7cm of user_stories] {Conceptual \\ Scenario};
+    \node[rectangle, fill=GreenYellow, draw, aspect=2, align=left] (concrete_scenarios) [right=1.7cm of conceptual_scenarios] {Concrete \\ Scenario};
+    \node[rectangle, fill=GreenYellow, draw, aspect=2] (use_cases) [right=1.7cm of concrete_scenarios] {Use Cases \vphantom{p}};
+    
+    % Lines between scenarios
+    \path[-, line width=0.3mm]
+        (user_stories) edge node [above] {$* \quad \quad 1$} (conceptual_scenarios)
+        (conceptual_scenarios) edge node [above]  {$1 \quad \quad *$} (concrete_scenarios)
+        (concrete_scenarios) edge node [above]  {$* \quad \quad *$} (use_cases)
+    ;
+    
+    % Y-model
+    \node[cloud, draw, aspect=2] (envisionment) [below =1.2cm of concrete_scenarios] {Envisionment};
+    \node[cloud, draw, aspect=2] (understanding) [left =2.1cm of envisionment] {Understanding};
+    \node[cloud, draw, fill=white, aspect=2, align=left] (physical) [below  =4.8cm of use_cases] {Physical \\ Design};
+    \node[cloud, draw, fill=white, aspect=2, align=right] (conceptual) [left =3.7cm of physical] {Conceptual \\ Design $\quad$};
+    
+    % Text nodes
+    \node[rectangle, draw] (specification) [above =1cm of use_cases] {Specification};
+    \node[rectangle, draw, align=right] (design_language) [above =1cm of physical] {Design \\ Language};
+    
+    % Arrows for relationsships
+    \path[->, line width=0.4mm]
+        (user_stories) edge (understanding)
+        (conceptual_scenarios) edge (understanding)
+        (concrete_scenarios)   edge [bend right] (conceptual)
+                               edge node [right] {prototyping} (envisionment)
+        (use_cases)            edge (specification)
+        (understanding)        edge node [below left] {Requirements/Problem} (conceptual)
+        (conceptual)           edge node [below] {Conceptual model etc.} (physical)
+        (envisionment)         edge (physical)
+        (physical)             edge (design_language)
+    ;
+  \end{tikzpicture}
+  \caption{The four different types of scenarios in relation to the Y-model. Note, that the \emph{evaluation} phase is not shown to make the figure more readable. \cite[p. 67]{benyon_14}}
   \label{fig:scenarios}
 \end{figure}
