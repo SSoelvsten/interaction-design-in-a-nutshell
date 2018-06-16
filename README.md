@@ -5,8 +5,8 @@ After having to read three different books on Human Computer Interaction, this i
 - Examples : Examples showing one or two key points from the theory section
 - Exercises : Small and focused exercises, such that you can apply and discuss the theory.
 
-## LaTeX Preamble
-This project uses my [LaTeX preamble](https://github.com/SSoelvsten/LaTeX-Preamble_and_Examples), which for compilation has to be cloned seperately into a folder at the same level as the root folder of this project. From here all that needs to be done is to compile `main.tex` with either [TexLive](https://tug.org/texlive/) or [MiKTex](https://miktex.org/).
+## LaTeX compilation
+Compile `main.tex` with either [TexLive](https://tug.org/texlive/) or [MiKTex](https://miktex.org/).
 
 ## Questions, issues and contribution
 If you find a problem in the document you can either contact me, SSoelvsten, add an issue and/or contribute to the project with a pull request. This whole project is a joined effort of students of Aarhus University, and your input is also highly valued.
