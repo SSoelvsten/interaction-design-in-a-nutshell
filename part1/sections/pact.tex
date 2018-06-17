@@ -3,19 +3,98 @@ To make design human-centred we want to consider the \emph{people} involved, the
 
 \input{part1/figures/activities_and_technologies.tex}
 
+In a PACT analysis the designer evaluates the many dimensions of \emph{P}s, \emph{A}s, \emph{C}s, and \emph{T}s possible and likely. On a current designsolution this can highlight designmistakes, while for new systems to be designed it can inform many design choices later, where it can be a foundation for the personas and scenarios of section \ref{sec:scenario_based_design}.
+
 \subsection{People}
-% Physical Differences:
-%    Different physical characteristics, such as senses, dexterity and disabilities (color blindness)
-%    Ergonomics
-%       Relationsship between people and environment. Draws on especially anatomy and physiology
-%       Ambient Environment (temperature, humidity)
-%       Working Environment (Design, safetyissues, hygiene)
-%       Makes it possible to distinguish between small and usable and too small and hence unusable
+The following are five different dimensions in which humans differ from eachother relevant to the design of solutions.
 
-
+\noindent
+\begin{longtable}{rc>{\raggedright\arraybackslash}p{.66\textwidth}}
+  Physical Differences & : &
+  The humans senses, dexterity and disabilities, such as color blindness.
+  \\
+  Ergonomics & : &
+  The \emph{ambient} and \emph{working} environment of section \ref{sec:ergonomics} together with the physiology of people, differentiating between physically usable and unusable
+  \\
+  Psychological Differences & : &
+  The spatial abilities, language, culture, attentionspan and memory of the people in the domain
+  \\
+  Mental models & : &
+  The existence, detail and accuracy of the conceptual models (section \ref{sec:conceptual_model}) people have of the current systems and potentially useful other systems.
+  \\
+  Social Differences & : &
+  The difference within the group of users or potential users, such as the amount of experience they have with the system and if it is necessary or not of them to use the system. Looking at this should be determined if the group is homogenous or heterogenous. \cite[p. 27-30]{benyon_14}
+\end{longtable}
 
 \subsection{Activities}
+First the overall goal of the activities should be determined by the designer and then the details of the activities listed below examined
+
+\noindent
+\begin{longtable}{rc>{\raggedright\arraybackslash}p{.69\textwidth}}
+  Temporal Aspects
+  &  1 & How frequent or infrequent a system is used, since a lot of learning is by repetition.
+  \\
+  &  2 & How busy the user is, i.e. the pressure(s) under which the user has to use the system.
+  \\
+  &  3 & Is it continuous or interruptable? Should/can the system help the user continue the activity?
+  \\
+  &  4 & The response time of the system. Humans normally expect a $100$ms response time.
+  \\
+  Cooperation
+  &  5 & Executed alone or as a group. Does the system have to support or work around communication and coordination?
+  \\
+  Complexity
+  &  6 & Well defined tasks can easily be supported by a linear design, while vaguely defined tasks need a more complex non-linear design
+  \\
+  Safety-critical
+  &  7 & How critical the consequences of a mistake is. The more critical the more important it is for the designer to prevent errors from occuring.
+  \\
+  &  8 & What happens and will people do on an error? Is it possible to recover?
+  \\
+  Nature of the content
+  &  9 & The type and amount of data the user has to put in.
+  \\
+  & 10 & The type and amount of data the system has to convey to the user.
+  \cite[p. 33-35]{benyon_14}
+\end{longtable}
 
 \subsection{Context}
+There are three different types of context the activities happen within
+
+\noindent
+\begin{longtable}{rc>{\raggedright\arraybackslash}p{.69\textwidth}}
+  Physical Environment & : &
+  If it is noisy, cold, wet, dirty, with direct sunlight etc.
+  \\
+  Social Context & : &
+  The ability to get support from other people or tutorials, and the privacy issues to consider. Furthermore also the social norms in play, which make some design solutions acceptable when alone but not while around others. \cite[34-35]{benyon_14}
+  \\
+  Organizational context & : &
+  % Technology -> organizational relations and deskilling
+  % time, place etc.
+  \todo: find better explanation for this context than Benyon14 provides
+\end{longtable}
 
 \subsection{Technologies}
+Humans interact with hardware and software through input and output of data. The following characteristics of technology is to be considered
+
+\noindent
+\begin{longtable}{rc>{\raggedright\arraybackslash}p{.71\textwidth}}
+  Material & : &
+  Plastic, metal, glass, wood etc.
+  \\
+  Types of interactions & : &
+  \todo
+  \\
+  Input & : &
+  For example buttons, touch, mouse, joystick, wii-remote, speech, QR-codes etc.
+  \\
+  Output & : &
+  All types of output are for vision, hearing and/or touch. For example display devices, sound (incl. speech), printer, haptics,  etc.
+  \\
+  Communication & : &
+  If it is wired or wireless and what technology is used for sending data.
+  \\
+  Content & : &
+  The type and the form of the data represented, which should be accurate, relevant and well presented. The content and amount of information changes the type of input and output reasonable to use
+\end{longtable}
