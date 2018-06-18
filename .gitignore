@@ -26,3 +26,7 @@ auto/
 *.gz
 
 *.bak
+
+*.lot
+
+*.lof
