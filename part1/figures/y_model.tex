@@ -1,12 +1,13 @@
 \begin{figure}[ht!]
   \centering
   \begin{tikzpicture}
-    \node[cloud, draw, aspect=2] (evaluation) {Evaluation};
-    \node[cloud, draw, aspect=2] (envisionment) [above left=1cm of evaluation] {Envisionment};
-    \node[cloud, draw, aspect=2] (understanding) [above right=1cm of evaluation] {Understanding};
-    \node[cloud, draw, aspect=2, align=left] (design) [below =1cm of evaluation] {Design \\ \\ \\};
-    \node[cloud, draw, fill=white, aspect=2, align=right] (conceptual) [below left =-1.7cm of design] {Conceptual \\ Design};
-    \node[cloud, draw, fill=white, aspect=2, align=left] (physical) [below right =-1.7cm of design] {Physical \\ Design};
+    \node[cloud, draw, aspect=2] (evaluation) {\bf Evaluation};
+    \node[cloud, draw=none, aspect=3] (top_guide) [above=1cm of evaluation] {};
+    \node[cloud, draw, aspect=3] (envisionment) [left=0.1cm of top_guide] {\bf Envisionment};
+    \node[cloud, draw, aspect=3] (understanding) [right=0.1cm of top_guide] {\bf Understanding};
+    \node[cloud, draw, aspect=3, align=left] (design) [below =1cm of evaluation] {\bf Design \\ \\};
+    \node[cloud, draw, fill=white, aspect=2, align=right] (conceptual) [below left =-1.8cm of design] {\bf Conceptual \\ \bf Design};
+    \node[cloud, draw, fill=white, aspect=2, align=left] (physical) [below right =-1.8cm of design] {\bf Physical \\ \bf Design};
     \path[<->, line width=0.6mm]
         (evaluation) edge (envisionment)
                      edge (understanding)

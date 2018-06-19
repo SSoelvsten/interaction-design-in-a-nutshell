@@ -1,6 +1,14 @@
-\begin{figure}
+\begin{wrapfigure}[14]{r}{19em}
   \centering
-  TODO
+    \begin{tikzpicture}
+    \node[rectangle, draw=none] (people) {\bf People};
+    \node[rectangle, draw, minimum height=2em] (technologies) [right=0.1cm of people] {Technologies};
+    \node[rectangle, draw, minimum height=2em] (activities) [left=0.1cm of people] {Acitivities};
+    \path[->, line width=0.6mm]
+        (technologies) edge [bend left=80] node [below] {Opportunities} (activities)
+        (activities) edge [bend left=80] node [above] {Requirements} (technologies)
+    ;
+  \end{tikzpicture}
   \caption[Mutual influence between technologies and activities]{The mutual influence between technologies and activities \cite[p. 26]{benyon_14}}
   \label{fig:activities_and_technologies}
-\end{figure}
+\end{wrapfigure}
