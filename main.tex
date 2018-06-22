@@ -18,7 +18,7 @@
    \input{part_frontmatter/introduction.tex}
    
 \mainmatter
-   \part{Theory}
+   \part{Theory} \label{part:theory}
        \input{part1/concepts.tex}
        \input{part1/humans.tex}
        \input{part1/process.tex}
@@ -26,15 +26,25 @@
        \input{part1/prototypes.tex}
        \input{part1/development.tex}
        
-   \part{Examples}
-       \todo
+   \part{Examples} \label{part:examples}
+       \input{part2/concepts.tex}
+       \input{part2/humans.tex}
+       \input{part2/process.tex}
+       \input{part2/methods.tex}
+       \input{part2/prototypes.tex}
+       \input{part2/development.tex}
+       
+       \input{part2/case_meta.tex}
    
-   \part{Cases}
-       \todo
+   \part{Exercises} \label{part:exercises}
+       \input{part3/concepts.tex}
+       \input{part3/humans.tex}
+       \input{part3/process.tex}
+       \input{part3/methods.tex}
+       \input{part3/prototypes.tex}
+       \input{part3/development.tex}
+       \input{part3/cases.tex}
    
-   \part{Exercises}
-       \todo
-
 \backmatter
     \input{part_backmatter/bibliography.tex}
     \printindex
