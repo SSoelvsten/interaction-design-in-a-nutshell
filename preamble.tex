@@ -65,11 +65,15 @@
 \usepackage[hidelinks]{hyperref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%            Index              %
+%    Index and bibliography     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{makeidx}
 \usepackage[columns=2]{idxlayout}
 \makeindex
+
+\usepackage[style=numeric-comp]{biblatex}
+\addbibresource{books.bib}
+\addbibresource{articles.bib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %         Environments          %
@@ -87,3 +91,4 @@
 \newtheorem{method}[theorem]{Method}
 \newtheorem{tool}[theorem]{Tool}
 \newtheorem{model}[theorem]{Model}
+
