@@ -1,6 +1,26 @@
 \begin{figure}
   \centering
-  TODO
+  \begin{tikzpicture}
+    % Mental Model
+    \node[cloud, draw, aspect=2, align=left] (mental_model) {\bf Conceptual Model \\};
+    \node[rectangle, fill=gray, draw, aspect=2] (system) [below=-1.35cm of mental_model] {The system};
+    
+    % Designers and users
+    \node[rectangle, fill=GreenYellow, draw, aspect=2, minimum width=2.2cm]
+          (designers) [left=2.5cm of mental_model] {\bf Designers};
+    \node[rectangle, fill=GreenYellow, draw, aspect=2, minimum width=2.2cm]
+          (users) [right=2.5cm of mental_model] {\bf Users};
+
+    % What actually happens
+    \node[rectangle] (what_happens) [below=1cm of mental_model] {What actually happens};
+          
+    \path[->, line width=0.4mm]
+        (designers) edge node [below] {conception} (mental_model)
+        (mental_model) edge [bend right=30] node [below] {conception} (users)
+        (users) edge [bend right=30] node [above] {interaction} (mental_model)
+        (system) edge (what_happens)
+        ;
+  \end{tikzpicture}
   \caption[Conceptual Model]{The conceptual model \cite[p. 31]{benyon14}}
   \label{fig:conceptual_model}
 \end{figure}
