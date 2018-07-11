@@ -1,3 +1,21 @@
 \begin{method}[Object-Action analysis] \label{meth:object-action_analysis} \index{Object-Action analysis}
-  
+  For every sceneraio it is broken down into its different activities and the following table
+  \begin{center}
+    \begin{tabular}{c|c|c|c|c}
+      \hline
+      Activity & Consists of sub-activites & Action & Object & Comments
+      \\ \hline
+    \end{tabular}
+  \end{center}
+  where the \emph{sub-activities} are the small and atomic steps needed to complete the activity. The \emph{actions} are the functions used, buttons pressed and interactions done, while the \emph{object} are the actual object on which the action is applied to. The comments are thoughts and claims of problems in the current design based on the rest of the row.
+
+  From this the following table is created with every activity noted and its occurences counted.
+  \begin{center}
+    \begin{tabular}{c|c}
+      \hline
+      All actions & All objects
+      \\ \hline
+    \end{tabular}
+  \end{center}
+  Based on this actions and objects can begin to be merged into one, if they have enough conceptually or functionally parallels. This can be used as the basis to manifest the conceptual model of tool \ref{tool:conceptual_model}. \cite[p 198]{benyon14}
 \end{method}
