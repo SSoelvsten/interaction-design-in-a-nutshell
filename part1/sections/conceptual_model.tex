@@ -1,6 +1,36 @@
 \section{Conceptual Model} \label{sec:conceptual_model}
+
+
 \input{part1/definitions/conceptual_model.tex}
-\input{part1/definitions/mental_model.tex}
-\input{part1/figures/conceptual_model.tex}
+\input{part1/definitions/conceptual_model2.tex}
 \input{part1/definitions/metaphor.tex}
+
+While metaphors almost always are needed to convey a new domain to a user, they are also a two-edged sword. Both the source and the target domain have concepts and features, and the goal using a metaphor is to help users correctly expect the concepts and features of the target domain. The relationsship between the source and the target domain must hence be analysed thouroughly, since otherwise users may get confused. This can happen both with too many or inappriopriate connotations in a metaphor, which results in \emph{conceptual baggage}, i.e. suggested functionality, that is not part of the target domain, or it can happen when the metaphor contains too few features mapped to the target. \cite[p. 192, 195-196]{benyon14} \cite[p. 181-182]{anderson} \index{Conceptual!Baggage}
+
+\input{part1/definitions/blend.tex}
+
+The following are a few principles for designing metaphors. \cite[p. 196]{benyon14}
+\begin{itemize}
+  \item \emph{Coherence}:
+    Metaphors should not be mixed and the consistency of the blend's structure should be maintained.
+  \item \emph{Transparency}:
+    The domain from which the different parts of the blend originate and why they work should be apparent to the user
+  \item \emph{Stricly needed}:
+    The blend should only contain what is strictly necessary for it to work.
+  \item \emph{Topology}:
+    How the concepts are organized and structured in both the source and the target should be the same - i.e. they have similar topologies.
+  \item \emph{Representation}:
+    Visual representations of objects and actions do not need to be realistic, but can be metaphorical.    
+\end{itemize}
+
 \input{part1/definitions/design_language.tex}
+
+\todo
+
+\input{part1/definitions/mental_model.tex}
+
+In figure \ref{fig:mental_model} the relationsship between the designer, the user, and the system is shown. What the system does may or may not be aligned with the mental model of the designer, which is completely different as to how the users may think the system behaves. \cite[p. 31]{benyon14} 
+
+\input{part1/figures/mental_model.tex}
+
+The goal of the designer is to design the system, such that the users will easily develop a mental model close to the conceptual model. This can be achieved by making the system more transparent with useful feedback, guidance, and good choice in how the users interact. Furthermore designers should develop a design language, use metaphors that communicate the conceptual model well, and find a clear, logical, and consistent conceptual design (section \ref{sec:conceptual_design}) then the users' will easier align their mental model with the intended conceptual model \cite[p. 86-88]{rogers} \cite[p. 32]{benyon14}

@@ -1,9 +1,9 @@
-\begin{figure}
+\begin{figure}[ht!]
   \centering
   \begin{tikzpicture}
     % Mental Model
-    \node[cloud, draw, aspect=2, align=left] (mental_model) {\bf Conceptual Model \\};
-    \node[rectangle, fill=gray, draw, aspect=2] (system) [below=-1.35cm of mental_model] {The system};
+    \node[cloud, draw, aspect=2, align=left] (mental_model) {\bf Mental Model \\};
+    \node[rectangle, fill=gray, draw, aspect=2] (system) [below=-1.2cm of mental_model] {The system};
     
     % Designers and users
     \node[rectangle, fill=GreenYellow, draw, aspect=2, minimum width=2.2cm]
@@ -22,5 +22,5 @@
         ;
   \end{tikzpicture}
   \caption[Conceptual Model]{The conceptual model \cite[p. 31]{benyon14}}
-  \label{fig:conceptual_model}
+  \label{fig:mental_model}
 \end{figure}
