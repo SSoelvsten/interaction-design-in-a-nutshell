@@ -12,7 +12,7 @@
    \input{part_frontmatter/titlepage.tex}
    \input{part_frontmatter/copyright.tex}
 
-   \newpage \pagestyle{fancy} \setcounter{page}{1}
+   \newpage \pagestyle{plain} \setcounter{page}{1}
    \setcounter{tocdepth}{1} \tableofcontents
    \listoffigures
    \listoftables
@@ -20,6 +20,7 @@
    \input{part_frontmatter/introduction.tex}
 
    \mainmatter
+   \pagestyle{fancy}
    \part{Theory} \label{part:theory}
        \input{part1/concepts.tex}
        \input{part1/humans.tex}
