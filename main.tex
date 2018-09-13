@@ -5,13 +5,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\dominitoc
+
 \frontmatter
    \pagestyle{empty}
    \input{part_frontmatter/titlepage.tex}
    \input{part_frontmatter/copyright.tex}
 
    \newpage \pagestyle{fancy} \setcounter{page}{1}
-   \tableofcontents
+   \setcounter{tocdepth}{1} \tableofcontents
    \listoffigures
    \listoftables
 

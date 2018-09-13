@@ -65,13 +65,25 @@
 \usepackage[hidelinks]{hyperref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    Index and bibliography     %
+%        Table of Content       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{minitoc}
+\nomtcrule
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             Index             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{makeidx}
 \usepackage[columns=2]{idxlayout}
 \makeindex
 
-\usepackage[style=numeric-comp]{biblatex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%          Bibliography         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+  style=numeric-comp,
+  backend=biber
+]{biblatex}
 \addbibresource{books.bib}
 \addbibresource{articles.bib}
 
