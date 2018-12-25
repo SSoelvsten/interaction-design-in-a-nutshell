@@ -7,14 +7,30 @@ After having to read three different books on Human Computer Interaction, this i
 
 ## Setup
 
-### LaTeX compilers
-Compile `main.tex` with either [TeX Live](https://tug.org/texlive/) or [MiKTeX](https://miktex.org/).
+### LaTeX compilation
+Compile `main.tex` with either [TeX Live](https://tug.org/texlive/) or
+[MiKTeX](https://miktex.org/).
 
-  - TexLive: Some packages for _TeX Live_ are not included in the standard distribution, resulting in failed compilations. Install _TeX Live_ using `apt install texlive-full` instead.
-  - MikTex: On Windows I have had really good experience with using _MiKTeX_, why I would recommend to use this on Windows machines.
+  - TexLive: To my knowledge this is the recommended distribution for Linux.
+    Some packages for _TeX Live_ are not included in the standard distribution,
+    resulting in failed compilations. Install _TeX Live_ using `apt install
+    texlive-full` instead.
+
+  - MikTex: On Windows I have had really good experience with using _MiKTeX_,
+    why I would recommend to use this on Windows machines.
+
+To have a compilation with resolved bibliography references you need to compile
+the _main.tex_ file twice while running _biber_ in between the two compilations
+
+```bash
+pdflatex main
+biber main
+pdflatex main
+```
 
 ### Makefile
-To make life easier a _makefile_ is included in the project, with which you have the following three commands.
+To make life easier a _makefile_ is included in the project, with which you have
+the following three commands.
 
 | Command   | Action                                            |
 |-----------|---------------------------------------------------|
