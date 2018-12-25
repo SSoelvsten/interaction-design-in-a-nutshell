@@ -5,8 +5,26 @@ After having to read three different books on Human Computer Interaction, this i
 - Examples : Examples showing one or two key points from the theory section
 - Exercises : Small and focused exercises, such that you can apply and discuss the theory.
 
-## LaTeX compilation
-Compile `main.tex` with either [TexLive](https://tug.org/texlive/) or [MiKTex](https://miktex.org/).
+## Setup
 
-## Questions, issues and contribution
-If you find a problem in the document you can either contact me, SSoelvsten, add an issue and/or contribute to the project with a pull request. This whole project is a joined effort of students of Aarhus University, and your input is also highly valued.
+### LaTeX compilers
+Compile `main.tex` with either [TeX Live](https://tug.org/texlive/) or [MiKTeX](https://miktex.org/).
+
+  - TexLive: Some packages for _TeX Live_ are not included in the standard distribution, resulting in failed compilations. Install _TeX Live_ using `apt install texlive-full` instead.
+  - MikTex: On Windows I have had really good experience with using _MiKTeX_, why I would recommend to use this on Windows machines.
+
+### Makefile
+To make life easier a _makefile_ is included in the project, with which you have the following three commands.
+
+| Command   | Action                                            |
+|-----------|---------------------------------------------------|
+| `install` | Installs _Tex Live_ full distribution             |
+| `compile` | Compiles the book including references            |
+| `clean`   | Removes all compiled files except the _.pdf_ file |
+
+
+#### TODO:
+Change the `install` task to a smaller distribution of _TeX Live_ or _MiKTex_ that only contains the necessary packages.
+
+## Contribution
+If you find a problem in the document you can either contact me, SSoelvsten, add an issue to the repository and/or contribute to the project with a pull request. This project hopefully will be a joined effort of many students, and your input is also highly valued.
