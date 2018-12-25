@@ -1,9 +1,14 @@
 # Interaction Design in a Nutshell
-After having to read three different books on Human Computer Interaction, this is an attempt to dispose of the frustrating amount of unecessary information and vague or non-existent definitions in the HCI universe. This is to be a dense, clearly defined, and small guide to interaction design divided into three parts
+After having to read three different books on Human Computer Interaction, this
+is an attempt to dispose of the frustrating amount of unecessary information and
+vague or non-existent definitions in the HCI universe. This is to be a dense,
+clearly defined, and small guide to interaction design divided into three parts.
 
-- Theory : Definition of all the theory, with every concept described and compared to other relevant concepts defined.
+- Theory : Definition of all the theory, with every concept described and
+  compared to other relevant concepts defined.
 - Examples : Examples showing one or two key points from the theory section
-- Exercises : Small and focused exercises, such that you can apply and discuss the theory.
+- Exercises : Small and focused exercises, such that you can apply and discuss
+  the theory.
 
 ## Setup
 
@@ -40,7 +45,11 @@ the following three commands.
 
 
 #### TODO:
-Change the `install` task to a smaller distribution of _TeX Live_ or _MiKTex_ that only contains the necessary packages.
+Change the `install` task to a smaller distribution of _TeX Live_ or _MiKTex_
+that only contains the necessary packages.
 
 ## Contribution
-If you find a problem in the document you can either contact me, SSoelvsten, add an issue to the repository and/or contribute to the project with a pull request. This project hopefully will be a joined effort of many students, and your input is also highly valued.
+If you find a problem in the document you can either contact me, SSoelvsten, add
+an issue to the repository and/or contribute to the project with a pull request.
+This project hopefully will be a joined effort of many students, and your input
+is also highly valued.
