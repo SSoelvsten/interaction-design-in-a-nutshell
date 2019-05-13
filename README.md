@@ -11,21 +11,25 @@ clearly defined, and small guide to interaction design divided into three parts.
   the theory.
 
 ## Setup
+This repository requires an installation of _LaTeX_, such as [TeX
+Live](https://tug.org/texlive/) or [MiKTeX](https://miktex.org/)
+
+  - TexLive: This is the recommended distribution for Linux. Some distributions
+    of _TeX Live_ are missing needed packages, resulting in failed compilations.
+    Install _TeX Live_ you may either fix this by resolving the missing packages
+    using `tlmgr` or just installing all packages with the `texlive-full`
+    distribution.
+
+  - MikTex: While there are security concerns, if quality-of-life is more
+    important, then _MikTex__ is the clear winner, as it resolves all missing
+    packages on compile time. Especially on Windows this distribution can be
+    recommended, as the TeXlive Package manager on Windows is not delivers the
+    best experience.
 
 ### LaTeX compilation
-Compile `main.tex` with either [TeX Live](https://tug.org/texlive/) or
-[MiKTeX](https://miktex.org/).
-
-  - TexLive: To my knowledge this is the recommended distribution for Linux.
-    Some packages for _TeX Live_ are not included in the standard distribution,
-    resulting in failed compilations. Install _TeX Live_ using `apt install
-    texlive-full` instead.
-
-  - MikTex: On Windows I have had really good experience with using _MiKTeX_,
-    why I would recommend to use this on Windows machines.
-
-To have a compilation with resolved bibliography references you need to compile
-the _main.tex_ file twice while running _biber_ in between the two compilations
+Compile `main.tex`. To have a compilation with resolved bibliography references
+you need to compile the _main.tex_ file twice while running _biber_ in between
+the two compilations.
 
 ```bash
 pdflatex main
@@ -35,18 +39,16 @@ pdflatex main
 
 ### Makefile
 To make life easier a _makefile_ is included in the project, with which you have
-the following three commands.
+the following commands.
 
 | Command   | Action                                            |
 |-----------|---------------------------------------------------|
-| `install` | Installs _Tex Live_ full distribution             |
 | `compile` | Compiles the book including references            |
 | `clean`   | Removes all compiled files except the _.pdf_ file |
 
-
 #### TODO:
-Change the `install` task to a smaller distribution of _TeX Live_ or _MiKTex_
-that only contains the necessary packages.
+Add `installation` task to a smaller distribution of _TeX Live_ `tlmgr` manager
+installing needed packages.
 
 ## Contribution
 If you find a problem in the document you can either contact me, SSoelvsten, add

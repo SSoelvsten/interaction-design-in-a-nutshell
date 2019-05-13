@@ -1,6 +1,3 @@
-install:
-	@sudo apt install texlive-full
-
 compile:
 	@pdflatex main
 	@biber main
