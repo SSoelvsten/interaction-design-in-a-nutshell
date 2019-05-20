@@ -18,3 +18,5 @@ auto/
 *.xml
 *.maf
 *.mtc*
+*.snm
+*.nav

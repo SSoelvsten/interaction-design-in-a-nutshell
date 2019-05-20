@@ -1,0 +1,336 @@
+\input{preamble.tex}
+
+%----------------------------------------------------------------------------------------
+% FRONT PAGE SLIDE
+%----------------------------------------------------------------------------------------
+\title[Rethinking Teaching HCI]{
+  Rethinking Teaching Interaction Design: \\ Material and course structure
+}
+
+\author{Steffan S\o lvsten} \institute[AU] {
+  Aarhus University
+  \\ \medskip
+  \textit{201505832@post.au.dk}
+}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+% Table of Content
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Overview}
+  \tableofcontents
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\section{The Problem}
+\begin{frame}
+  \frametitle{The Problem}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\subsection{The book}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{The Problem}
+  \Huge{\centerline{The book}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  \textbf{Example 1:} Interaction Design: Beyond human-computer interaction
+  
+  \medskip
+  
+  {\tiny \it ``What to evaluate ranges from low-tech prototypes to complete
+systems; a particular screen function to the whole workflow; and from aesthetic
+design to safety features. For example, developers of a new web browser may want
+to know if users find items faster with their product, whereas developers of an
+ambient display may be interested in whether it changes people's behaviour.
+Government authorities may ask if a computerized system for controlling traffic
+lights results in fewer accidents or if a website complies with the standards
+required for users with disabilities. Makers of a toy ask if 6-year-olds can
+manipulate the controls and whether they are engaged by its furry case, and
+whether the toy is safe for them to play with. A company that develops personal,
+digital music players may want to know if the size, color, and shape of the
+casings are liked by people from different age groups living in different
+countries. A software company may want to asses market reaction to its new
+homepage design.''}
+
+  \medskip
+
+  \begin{itemize}
+  \item After the first two examples the reader either got the point or newer will...
+  \end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  \textbf{Example 2:} Designing Human Interactive Systems
+  
+  \medskip
+  
+  {\tiny \it ``One way to conceptualize the main features of a system is to use
+a ‘rich picture’. Two examples are shown in Figure 3.2. A rich picture captures
+the main conceptual relationships between the main conceptual entities in a
+system - a model of the structure of a situation. Peter Checkland (Checkland,
+1981; Checkland and Scholes, 1999), who originated the soft systems approach,
+also emphasizes focusing on the key transformation of a system. This is the
+conceptual model of processing. The principal stakeholders - customers, actors,
+system owners - should be identified. The designer should also consider the
+perspective from which an activity is being viewed as a system (the
+Weltanschauung) and the environment in which the activities take place.
+(Checkland proposes the acronym CATWOE - customers, actors, transformation,
+Weltanschauung, owners, environment - for these elements of a rich picture.)
+Most importantly, the rich picture identifies the issues or concerns of the
+stakeholders, thus helping to focus attention on problems or potential design
+solutions.''}
+
+  \medskip
+
+  \begin{itemize}
+  \item Extremely bad, vague and convoluted way to define a Rich Picture
+  \item Quote is from the middle of the description of the Y-model.
+  \end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  \textbf{Example 3:} Designing Human Interactive Systems
+  
+  \medskip
+  
+  {\tiny \it ``The key feature of conceptual design is to keep things abstract - focus on the ‘what’
+rather than the ‘how’ - and to avoid making assumptions about how functions and infor­
+mation will be distributed. There is no clear-cut distinction between conceptual and
+physical design, but rather there are degrees of conceptuality.''}
+  
+  \medskip
+
+  {\tiny \it ``Physical design is concerned with how things are going to work and with detailing
+the look and feel of the product. Physical design is about structuring interactions into
+logical sequences and about clarifying and presenting the allocation of functions and
+knowledge between people and devices. The distinction between conceptual and physi­
+cal design is very important.''}
+
+  \begin{itemize}
+  \item These two quotes are paragraphs very next to each other on page 51.
+  \item There are even bigger contradictions between the literature
+  \end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  We must conclude that the current books used to teach HCI has the following
+  properties
+  
+  \begin{itemize}
+  \item Verbosely written
+  \item Often goes on irrelevant tangents
+  \item Concepts and methods are only vaguely defined
+  \item Books contradict each other and/or themselves
+  \end{itemize}
+
+  This opinion of the books can be confirmed when interviewing Computer Science students.
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  Meanwhile what Computer Scientists are good at reading/understanding
+  mathematical and computer science books, which all share the following features
+
+  \begin{itemize}
+  \item Concise
+  \item Stays close to the point currently made
+  \item Clear distinction between types of information (definition, examples,
+    interluding text)
+  \item Everything is defined rigorously
+  \item No contradictions
+  \end{itemize}
+
+  Which means Computer Scientists have a really hard time coping with the given
+  material
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\subsection{The course content}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{The Problem}
+  \Huge{\centerline{
+      The course content}
+  \centerline{and structure}}  
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  \textbf{Course: Human-Computer Interaction}
+  \begin{itemize}
+  \item Introduces theory of Interaction Design
+  \item Project: Android App
+  \end{itemize}
+
+  \medskip
+  
+  \textbf{Course: Experimental System Development}
+  \begin{itemize}
+  \item (Re)introduces theory of Interaction Design with some additions
+  \item Project 1: Pre-made mini-project
+  \item Project 2: Project for client
+  \end{itemize}  
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  Note from this small description, that
+  \begin{itemize}
+  \item The same theory is taught twice.
+  \item A lot of energy is spent on learning to program an Android App.
+  \item Hands-on experience of a lot of theory is not possible, as a project
+    quickly is locked in a single direction due to technical or time constraints.
+  \end{itemize}
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\section{A Proposal for a solution}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{A Proposal for a solution}
+  Looking at courses and material that work well for Computer Science students,
+  discussing with other students, I (we) have come up with the following suggestions...
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\subsection{New book}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{A Proposal for a solution}
+  \Huge{\centerline{New Book}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  Book written similar to the books from the Mathematical Institute
+  \begin{itemize}
+    \item All definitions, concepts, methods, etc. are clearly labelled,
+      numbered, seperated and referenced.
+    \item All theory is described in concisely and rigorously
+    \item Examples are not inline, but separated
+    \item Small concrete exercises are given for all parts of the theory
+  \end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  \textbf{Example} A rigorous, clear, and concise definition
+
+  \medskip
+  
+  {\small \it 
+    ``\textbf{Method 4.13 (Rich Picture): } A diagram of the structure of a
+specific situation by depicting the organisational structure, the different
+people, and the entities. Relationships and interactions between the different
+people and entities are included, together with the concerns of the different
+stakeholders. This helps conceptualize the main features of a solution, as it
+highlights conflicts and concerns of stakeholders (definition 1.10). Furthermore
+as a rich picture is good for investigating and understanding unstructured
+domains, then it can be used as part of \emph{understanding} of the
+problem domain.''}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  This is not just a mere suggestion; I've made progress on exactly this and got
+  immensely good feedback on the 'paper prototype'
+
+  \medskip
+
+  \begin{block}{Interaction Design in a Nutshell}
+    https://github.com/SSoelvsten/Interaction\_Design\_in\_a\_Nutshell/
+  \end{block}
+  
+  \medskip
+
+  \Huge{\centerline{DEMO}}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\subsection{New course structure}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{A Proposal for a solution}
+  \Huge{\centerline{New course structure}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  \textbf{Course: Human-Computer Interaction}
+  \begin{itemize}
+  \item Introduces theory of Interaction Design
+  \item Small T\O\ Exercises 
+  \item 7 - 14 isolated and purely theoretical group hand-ins covering different
+    parts of the theory
+  \end{itemize}
+
+  \medskip
+  
+  \textbf{Course: Experimental System Development}
+  \begin{itemize}
+  \item Project 1: Pre-made mini-project focusing on the interplay of the
+    methods and iteration
+  \item Project 2: Project for client (bigger than current)
+  \end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+  The book exactly attempts to support these new T\O\ exercises and small
+  isolated hand-ins.
+
+  \medskip
+  
+  \textbf{T\O\ Exercise}
+  \begin{itemize}
+  \item Given a problem description and/or data, ask the students to apply one
+    of the methods from the theory.
+
+    \medskip
+    
+    \textbf{Example:} Given a transcript from an interview create a Flow Model
+  \end{itemize}
+
+  \medskip
+  
+  \textbf{Handins}
+  \begin{itemize}
+  \item Given a description (and possible data) the students are to apply
+    several methods to cover a specific step in the design process.
+
+    \medskip
+    
+    \textbf{Example:} Given a thorough description of a problem in some domain,
+    have the students propose a design and create a paper prototype
+  \end{itemize}
+\end{frame}
+
+\end{document}
