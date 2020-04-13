@@ -1,4 +1,7 @@
 # Interaction Design in a Nutshell
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE.md)
+![test](https://github.com/SSoelvsten/Interaction_Design_in_a_Nutshell/workflows/test/badge.svg?branch=master)
+
 After having to read three different books on Human Computer Interaction, this
 is an attempt to dispose of the frustrating amount of unecessary information and
 vague or non-existent definitions in the HCI universe. This is to be a dense,

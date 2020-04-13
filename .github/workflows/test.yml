@@ -1,0 +1,22 @@
+name: test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:      
+  build_examples_article:
+    name: test compilation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: latex
+        uses: dante-ev/latex-action@master
+        with:
+          root_file: main.tex
+      - uses: actions/upload-artifact@v1
+        with:
+          name: out
+          path: main.pdf
