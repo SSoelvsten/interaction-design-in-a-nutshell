@@ -23,7 +23,7 @@ Live](https://tug.org/texlive/) or [MiKTeX](https://miktex.org/)
     distribution of TeX Live is missing some packages, that are used in this
     document. These specifically are:
 
-    > _background_, _idxlayout_, _lastpage_, _wrapfig_
+    > _idxlayout_, _lastpage_, _wrapfig_
 
     You can install these with the TeX Live package manager _tlmgr_ or by
     finding with your package manager of choice. Alternatively, you can also use
