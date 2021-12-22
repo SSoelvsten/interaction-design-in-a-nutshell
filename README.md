@@ -19,26 +19,30 @@ into three parts.
 This repository requires an installation of _LaTeX_, such as [TeX
 Live](https://tug.org/texlive/) or [MiKTeX](https://miktex.org/)
 
-  - TexLive: This is the recommended distribution for Linux. Some distributions
-    of _TeX Live_ are missing needed packages, resulting in failed compilations.
-    Install _TeX Live_ you may either fix this by resolving the missing packages
-    using `tlmgr` or just installing all packages with the `texlive-full`
-    distribution.
+  - **TexLive**: This is the recommended distribution for Linux. The core
+    distribution of TeX Live is missing some packages, that are used in this
+    document. These specifically are:
 
-  - MikTex: While there are security concerns, if quality-of-life is more
+    > _background_, _idxlayout_, _lastpage_, _wrapfig_
+
+    You can install these with the TeX Live package manager _tlmgr_ or by
+    finding with your package manager of choice. Alternatively, you can also use
+    the full installation of TeX Live with all packages (e.g. the _texlive-full_
+    package in _apt_).
+
+  - **MikTex**: While there are security concerns, if quality-of-life is more
     important, then _MikTex__ is the clear winner, as it resolves all missing
     packages on compile time. Especially on Windows this distribution can be
-    recommended, as the TeXlive Package manager on Windows is not delivers the
-    best experience.
+    recommended, as the TeXlive Package manager on Windows lacks easy of use.
 
 ### LaTeX compilation
 Compile `main.tex`. To have a compilation with resolved bibliography references
-you need to compile the _main.tex_ file twice while running _biber_ in between
+you need to compile the _main.tex_ file twice while running _bibtex_ in between
 the two compilations.
 
 ```bash
 pdflatex main
-biber main
+bibtex main
 pdflatex main
 ```
 
