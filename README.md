@@ -1,7 +1,5 @@
 # Interaction Design in a Nutshell
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE.md)
 ![test](https://github.com/SSoelvsten/Interaction_Design_in_a_Nutshell/workflows/test/badge.svg?branch=main)
-[![Pull Requests are welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/SSoelvsten/Interaction_Design_in_a_Nutshell/pulls)
 
 After having had to read three different books on Human Computer Interaction,
 this is an attempt to dispose of the frustrating amount of unecessary
@@ -14,6 +12,7 @@ into three parts.
 - Examples : Examples showing one or two key points from the theory section
 - Exercises : Small and focused exercises, such that you can apply and discuss
   the theory.
+
 
 ## Setup
 This repository requires an installation of _LaTeX_, such as [TeX
@@ -59,8 +58,13 @@ the following commands.
 Add `installation` task to a smaller distribution of _TeX Live_ `tlmgr` manager
 installing needed packages.
 
+
 ## Contribution
 If you find a problem in the document you can either contact me, SSoelvsten, add
 an issue to the repository and/or contribute to the project with a pull request.
 This project hopefully will be a joined effort of many students, and your input
 is also highly valued.
+
+
+## License
+This document (and its source) are provided under the [GNU Free Document License](/LICENSE.md).
