@@ -7,14 +7,18 @@ information and vague or non-existent definitions in the HCI universe. This is
 to be a dense, clearly defined, and small guide to interaction design divided
 into three parts.
 
-- Theory : Definition of all the theory, with every concept described and
-  compared to other relevant concepts defined.
-- Examples : Examples showing one or two key points from the theory section
-- Exercises : Small and focused exercises, such that you can apply and discuss
-  the theory.
+- **Theory** :
+  Definition of all the theory, with every concept described and compared to
+  other relevant concepts defined.
+
+- **Examples** :
+  Examples showing one or two key points from the theory section
+
+- **Exercises** :
+  Small and focused exercises, such that you can apply and discuss the theory.
 
 
-## Setup
+## Dependencies
 This repository requires an installation of _LaTeX_, such as [TeX
 Live](https://tug.org/texlive/) or [MiKTeX](https://miktex.org/)
 
@@ -34,7 +38,7 @@ Live](https://tug.org/texlive/) or [MiKTeX](https://miktex.org/)
     packages on compile time. Especially on Windows this distribution can be
     recommended, as the TeXlive Package manager on Windows lacks easy of use.
 
-### LaTeX compilation
+## Usage
 Compile `main.tex`. To have a compilation with resolved bibliography references
 you need to compile the _main.tex_ file twice while running _bibtex_ in between
 the two compilations.
@@ -53,10 +57,6 @@ the following commands.
 |-----------|---------------------------------------------------|
 | `compile` | Compiles the book including references            |
 | `clean`   | Removes all compiled files except the _.pdf_ file |
-
-#### TODO:
-Add `installation` task to a smaller distribution of _TeX Live_ `tlmgr` manager
-installing needed packages.
 
 
 ## Contribution
