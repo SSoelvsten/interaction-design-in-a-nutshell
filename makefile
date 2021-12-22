@@ -1,6 +1,6 @@
 compile:
 	@pdflatex main
-	@biber main
+	@bibtex main
 	@pdflatex main
 
 clean:
