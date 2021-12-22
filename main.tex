@@ -1,49 +1,45 @@
 \input{preamble.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-% Document starts here! %
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 \dominitoc
 
 \frontmatter
-   \pagestyle{empty}
-   \input{part_frontmatter/titlepage.tex}
-   \input{part_frontmatter/copyright.tex}
+  \pagestyle{empty}
+  \input{part_frontmatter/titlepage.tex}
+  \input{part_frontmatter/copyright.tex}
 
-   \newpage \pagestyle{plain} \setcounter{page}{1}
-   \setcounter{tocdepth}{1} \tableofcontents
-   \listoffigures
-   %\listoftables
+  \newpage \pagestyle{plain} \setcounter{page}{1}
+  \setcounter{tocdepth}{1} \tableofcontents
+  \listoffigures
+  %\listoftables
 
-   \input{part_frontmatter/introduction.tex}
+  \input{part_frontmatter/introduction.tex}
 
-   \mainmatter
-   \pagestyle{fancy}
-   \part{Theory} \label{part:theory}
-       \input{part1/humans.tex}
-       \input{part1/technology.tex}
-       \input{part1/process.tex}
-       \input{part1/methods.tex}
-       \input{part1/prototypes.tex}
-       \input{part1/development.tex}
+\mainmatter
+  \pagestyle{fancy}
+  \part{Theory} \label{part:theory}
+    \input{part1/humans.tex}
+    \input{part1/technology.tex}
+    \input{part1/process.tex}
+    \input{part1/methods.tex}
+    \input{part1/prototypes.tex}
+    \input{part1/development.tex}
        
-   \part{Examples} \label{part:examples}
-       \input{part2/theory.tex}
+  \part{Examples} \label{part:examples}
+    \input{part2/theory.tex}
    
-   \part{Exercises} \label{part:exercises}
-       \input{part3/humans.tex}
-       \input{part3/technology.tex}
-       \input{part3/process.tex}
-       \input{part3/methods.tex}
-       \input{part3/prototypes.tex}
-       \input{part3/development.tex}
-       \input{part3/cases.tex}
+  \part{Exercises} \label{part:exercises}
+    \input{part3/humans.tex}
+    \input{part3/technology.tex}
+    \input{part3/process.tex}
+    \input{part3/methods.tex}
+    \input{part3/prototypes.tex}
+    \input{part3/development.tex}
+    \input{part3/cases.tex}
    
 \backmatter
-    \printbibliography
-    \printindex
-    \input{part_backmatter/gnu.tex}
-    \input{part_backmatter/back.tex}
+  \printbibliography
+  \printindex
+  \input{part_backmatter/gnu.tex}
+  \input{part_backmatter/back.tex}
 \end{document}
